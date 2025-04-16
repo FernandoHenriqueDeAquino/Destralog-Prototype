@@ -1,0 +1,152 @@
+/* ELEMENTOS ESPECÍFICOS */
+
+#nav-bar {
+    padding: 25px, 35px;
+    background-color: red;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#brand {
+   font-size: xx-large;  
+}
+
+#brand .ubuntu-medium {
+    color: white;
+}
+
+#destralog-logo-branca{
+    width: 250px;
+}
+
+a,
+a:active,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-bar .nav-toggle {
+    float: none;
+    cursor: pointer;
+    font-size: 1.25em;
+    color: #fff;
+    display: inline-block;
+}
+
+#nav-bar #brand {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+#nav-bar ul {
+    float: right;
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+#nav-bar ul li {
+    margin-right: 1em;
+    display: inline-block;
+    font-size: 1;
+    font-weight: 400;
+}
+
+#logo-vermelha-horizontal {
+    width: 70%;
+}
+
+#header-presentation {
+    font-size: x-large;
+}
+
+#tagline-presentation {
+    font-size: xx-large;
+    font-weight: 30;
+}
+
+#grid-container-segmentos {
+    background-color: red;
+    color: #fff;
+    font-size: xx-large;
+}
+
+/* CLASSES COMPARTILHADAS */
+
+.container {
+    width: 100%;
+    padding: 5em 8em;
+    text-align: center;
+}
+
+/* FLEX GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.grid-item {
+    box-sizing: border-box;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Fontes */
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* RESPONSIVIDADE */
+
+/* Hide nav-toggle when screen is wider than 975px */
+@media (min-width: 976px) {
+    #nav-bar .nav-toggle {
+        display: none;
+    }
+}
+
+/* Show nav-toggle when screen is 975px or narrower */
+@media (max-width: 975px) {
+    #nav-bar .nav-toggle {
+        display: block;
+    }
+
+    #nav-bar ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+    }
+
+    #nav-bar ul li {
+        margin-right: 0.5em;
+        display: inline-block;
+        width: 100%;
+        padding: 1em 8em;
+        background-color: #444;
+        border: solid 1px #000;
+    }
+}
